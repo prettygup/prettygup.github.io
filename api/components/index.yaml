@@ -1,0 +1,8 @@
+examples:
+  $ref: "./examples/Retail.yaml"
+enum:
+  $ref: "./enums/index.yaml"
+tags:
+  $ref: "./tags/index.yaml"
+flows:
+  $ref: "./flows/index.yaml"
