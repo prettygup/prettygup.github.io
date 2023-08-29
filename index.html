@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>ONDC Mobility</title>
+    <title>ONDC Retail</title>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -91,12 +91,12 @@
       <div class="float-end me-5 mt-3">
         <label for="api-contracts">Release Version:</label>
         <select id="contract-dropdown" onchange="upadteContract()">
-          <!-- <option value="draft-1.x">draft-1.x</option> -->
-          <option value="draft-2.x">draft-2.x</option>
-          <option value="master">master</option>
+          <option value="draft-1.x">draft-1.x</option>
+          <!-- <option value="draft-2.x">draft-2.x</option> -->
+          <!-- <option value="master">master</option> -->
         </select>
       </div>
-      <h1 class="text-center">ONDC Financial Services Developer Guide</h1>
+      <h1 class="text-center">ONDC Retail Developer Guide</h1>
     </header>
     <div id="mermaid-renderer"></div>
     <div class="container-fluid">
@@ -304,9 +304,20 @@
                       ></select>
                     </td>
                   </tr>
+                  <tr id="tag-value-row" style="display: none;">
+                    <td><b>Tag Value</b></td>
+                    <td>
+                      <select
+                        id="tag-value-dropdown"
+                        class="form-select"
+                        onchange="displayTagValue()"
+                      ></select>
+                    </td>
+                  </tr>
                 </table>
                 <table id="tag-group-table" class="table"></table>
                 <table id="tag-table" class="table"></table>
+                <table id="tag-value-table" class="table" style="display: none;"></table>
               </div>
             </div>
           </div>
